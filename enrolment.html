@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Enrollment</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #2f9ee5;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a{
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        .main{
+            width: 420px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .inner{
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        form{
+            padding: 20px;
+        }
+        .section{
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .section h3{
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        label{
+            font-size: 12px;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input,select{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+        textarea{
+            resize: none;
+            height: 70px;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+        .radio-group{
+            display: flex;
+            gap: 15px;
+            font-size: 13px;
+        }
+        .radio-group input{
+            width: auto;
+        }
+        .terms{
+            font-size: 12px;
+            margin: 15px 0;
+        }
+        .terms input{
+            width: auto;
+            margin-right: 5px;
+        }
+        button{
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        footer{
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+        footer a{
+            color: #6ec1ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#">LearnHub</a>
+        <a href="#">Home</a>
+        <a href="#">Coueses</a>
+        <a href="#">Enroll</a>
+        <a href="#">Contact</a>
+    </header>
+
+    <div class="main">
+        <div class="inner">
+            <h2>Course Enrollment</h2>
+            <p>Please fill in the form to enroll</p>
+        </div>
+
+        <form>
+            <div class="section">
+                <h3>Personal Information</h3>
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 1234567890">
+
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+             <div class="section">
+                <h3>Education Background</h3>
+
+                <label>Highest Qualification</label>
+                <select>
+                    <option>Select your qualification</option>
+                    <option>High School</option>
+                    <option>Diploma</option>
+                    <option>Graduate</option>
+                    <option>Post Graduate</option>
+                </select>
+
+                <label>Do you have any programming experience?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="exp"> Yes</label>
+                    <label><input type="radio" name="exp"> No</label>
+                </div>
+            </div>
+             <div class="section">
+                <h3>Course Selection</h3>
+
+                <label>Select Course</label>
+                <select>
+                    <option>Choose a course</option>
+                    <option>Web Development</option>
+                    <option>Python Programming</option>
+                    <option>Data Science</option>
+                    <option>UI/UX Design</option>
+                </select>
+
+                <label>Why do you want to take this course?</label>
+                <textarea placeholder="Tell us about your goals..."></textarea>
+            </div>
+            <div class="terms">
+                <label>
+                    <input type="checkbox">
+                    I agree to the Terms & Conditions and Privacy Policy
+                </label>
+            </div>
+
+            <button type="submit">Complete Enrollment</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LearnHub. All rights reserved.</p>
+        <p>Email: <a href="info@learnhub.com">info@learnhub.com</a> | Phone: +91 1234567890</p>
+    </footer>
+    
+</body>
+</html>
