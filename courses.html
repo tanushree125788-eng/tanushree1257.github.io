@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Courses</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #2f9ee5;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a{
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        .Avaliable-courses{
+            background-color: #3498db;
+            padding: 40px 20px;
+            margin: 30px auto;
+            width: 90%;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+        .Avaliable-courses h2{
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .Avaliable-courses p{
+            font-size: 14px;
+        }
+        .main{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .inner{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+        .card-top{
+            height: 120px;
+        }
+
+        .purple{ background: linear-gradient(120deg, #6a7ce2, #7a4fb3); }
+        .pink{ background: linear-gradient(120deg, #ff7eb3, #ff758c); }
+        .blue{ background: linear-gradient(120deg, #36d1dc, #5b86e5); }
+        .orange{ background: linear-gradient(120deg, #f7971e, #ffd200); }
+        .darkblue{ background: linear-gradient(120deg, #141e30, #243b55); }
+        .light{ background: linear-gradient(120deg, #dfe9f3, #ffffff); }
+
+        .web{
+        font-size: 12px;
+        color: #777;
+        margin: 15px;
+        }
+        .inner h3{
+            font-size: 16px;
+            margin: 0 15px 10px;
+        }
+        .inner p{
+            font-size: 13px;
+            color: #555;
+            margin: 0 15px 15px;
+        }
+        .inner div{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 15px 15px;
+        }
+        .time{
+            font-size: 12px;
+            color: #777;
+        }
+        .rupees{
+            color: #2ecc71;
+            font-weight: bold;
+        }
+        .inner button{
+            display: block;
+            width: 85%;
+            margin: auto;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer{
+            background-color: rgb(40, 40, 72);
+            color: white;
+            text-align: center;
+            margin: 50px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div> LearnHub</div>
+        <a href="#">Home</a>
+        <a href="#">Coueses</a>
+        <a href="#">Enroll</a>
+        <a href="#">Contact</a>
+    </header>
+
+    <section class="Avaliable-courses">
+        <div class="course">
+            <h2>Avaliable Courses</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quia.</p>
+        </div>
+    </section>
+    
+    <section class="main">
+        <div class="inner">
+                <div class="card-top purple"></div>
+                <p class="web">Web Devlopment</p>
+                <h3>Complete Web Devlopment Course</h3>
+                <p>Learn HTML , CSS , JavaScript and morden web technologies from scrach</p>
+                <div>
+                    <p class="time">2 weeks</p>
+                    <p class="rupees">₹2,999</p>
+                </div>
+                <button>Enroll Now</button>
+        </div>
+        <div class="inner">
+                <div class="card-top pink"></div>
+                <p class="web">Programming</p>
+                <h3>Python Programming Masterclass</h3>
+                <p>Master Python programming from basics to advanced concepts.</p>
+                <div>
+                    <p class="time">10 weeks</p>
+                    <p class="rupees">₹2,999</p>
+                </div>
+                <button>Enroll Now</button>
+        </div>
+        <div class="inner">
+                <div class="card-top blue"></div>
+                <p class="web">Data Science</p>
+                <h3>Data Science Fundamentals</h3>
+                <p>Learn data analysis, visualization, and machine learning.</p>
+                <div>
+                    <p class="time">10 weeks</p>
+                    <p class="rupees">3,499</p>
+                </div>
+                <button>Enroll Now</button>
+        </div>
+        <div class="inner">
+                <div class="card-top orange"></div>
+                <p class="web">Mobile Devlopment</p>
+                <h3>Mobile App Devlopment</h3>
+                <p>Build mobile apps for Android and iOS using modern tools.</p>
+                <div>
+                    <p class="time">8 weeks</p>
+                    <p class="rupees">3,999</p>
+                </div>
+                <button>Enroll Now</button>
+        </div>
+        <div class="inner">
+                <div class="card-top darkblue"></div>
+                <p class="web">Design</p>
+                <h3>UI/UX Design Complete Course</h3>
+                <p>Learn user interface and user experience design principles</p>
+                <div>
+                    <p class="time">8 weeks</p>
+                    <p class="rupees">2,799</p>
+                </div>
+                <button>Enroll Now</button>
+        </div>
+        <div class="inner">
+                <div class="card-top light"></div>
+                <p class="web">AI & ML</p>
+                <h3>Artificial Intelligence Basics</h3>
+                <p>Introduction to AI, machine learning, and neural networks.</p>
+                <div>
+                    <p class="time">10 weeks</p>
+                    <p class="rupees">4,499</p>
+                </div>
+                <button>Enroll Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LearnHub. All rights reserved.</p>
+        <p>Email: <a href="info@learnhub.com">info@learnhub.com</a> | Phone: +91 1234567890</p>
+    </footer>
+
+</body>
+</html>
